@@ -85,6 +85,7 @@ class ViewController: UIViewController {
             outputLbl.text = "0"
     }
     
+    //Playing Sound
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
