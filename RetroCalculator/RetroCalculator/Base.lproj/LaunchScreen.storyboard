@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +21,55 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="mX8-fl-zY0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="H0d-zl-SAR"/>
+                                    <constraint firstAttribute="height" constant="593" id="nMT-RT-Qwm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-Rz-ZJK">
+                                <rect key="frame" x="0.0" y="534" width="375" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="e8S-ym-Uya"/>
+                                    <constraint firstAttribute="height" constant="133" id="k2Y-Tp-iin"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="zif-cP-NS0">
+                                <rect key="frame" x="48" y="145" width="278" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="iFC-ZN-E3e"/>
+                                    <constraint firstAttribute="width" constant="278" id="xVE-02-wTg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A1E-Rz-ZJK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2pr-wR-KgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="mX8-fl-zY0" secondAttribute="trailing" id="6CD-8W-qqT"/>
+                            <constraint firstItem="mX8-fl-zY0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6FS-LC-nH2"/>
+                            <constraint firstItem="zif-cP-NS0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="32" id="6Lp-Z9-PDW"/>
+                            <constraint firstItem="zif-cP-NS0" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="125" id="HZs-Gr-gN7"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="A1E-Rz-ZJK" secondAttribute="bottom" id="LOj-DP-Dr1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zif-cP-NS0" secondAttribute="trailing" constant="33" id="cAr-3j-Tp4"/>
+                            <constraint firstItem="mX8-fl-zY0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="fEo-pR-j0w"/>
+                            <constraint firstItem="A1E-Rz-ZJK" firstAttribute="top" secondItem="zif-cP-NS0" secondAttribute="bottom" constant="208" id="ij3-IZ-Qe0"/>
+                            <constraint firstItem="A1E-Rz-ZJK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="pqb-YE-s21"/>
+                            <constraint firstAttribute="trailing" secondItem="A1E-Rz-ZJK" secondAttribute="trailing" id="rBc-CQ-rsW"/>
+                            <constraint firstItem="mX8-fl-zY0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rKe-2g-T4l"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="mX8-fl-zY0" secondAttribute="bottom" constant="74" id="uoE-ta-98h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
+    </resources>
 </document>

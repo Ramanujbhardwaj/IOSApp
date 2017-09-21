@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case Clear = "Clear"
     }
     
     var currentOperation = Operation.Empty
@@ -72,6 +73,18 @@ class ViewController: UIViewController {
         processOperation(operation: currentOperation)
     }
     
+    @IBAction func onClearPressed(sender: AnyObject) {
+        playSound()
+        clearNumber()
+
+    }
+
+    func clearNumber(){
+            result = "0"
+            currentOperation = Operation.Empty
+            outputLbl.text = "0"
+    }
+    
     func playSound() {
         if btnSound.isPlaying {
             btnSound.stop()
@@ -97,11 +110,11 @@ class ViewController: UIViewController {
                 } else if currentOperation == Operation.Add {
                     result = "\(Double(leftValStr)! + Double(rightValStr)!)"
                 }
-                
                 leftValStr = result
                 outputLbl.text = result
             }
-            
+           
+
             currentOperation = operation
         } else {
             //This is the first time an operator has been pressed
