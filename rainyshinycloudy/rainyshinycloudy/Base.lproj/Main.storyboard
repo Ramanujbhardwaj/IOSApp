@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WeatherVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherVC" customModule="rainyshinycloudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZy-dV-2bb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-XA-GQJ">
+                                        <rect key="frame" x="20" y="20" width="195" height="260"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 30, 2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-lq-HTX">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="50"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="91.0 °" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="sL2-8m-G7u">
+                                                <rect key="frame" x="0.0" y="50" width="195" height="152.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="SUNNYVALE, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ7-tN-NmD">
+                                                <rect key="frame" x="0.0" y="202.5" width="195" height="57.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaR-36-mSl">
+                                        <rect key="frame" x="235" y="71.5" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="JE6-SW-b7G"/>
+                                            <constraint firstAttribute="height" constant="120" id="fBR-RR-pzU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-gT-wm5">
+                                        <rect key="frame" x="235" y="241.5" width="120" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705882352939" green="0.64313725490196072" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eaR-36-mSl" firstAttribute="leading" secondItem="RKs-XA-GQJ" secondAttribute="trailing" constant="20" id="3mz-PA-MPl"/>
+                                    <constraint firstItem="uFh-gT-wm5" firstAttribute="top" secondItem="eaR-36-mSl" secondAttribute="bottom" constant="50.5" id="6lr-O4-YUU"/>
+                                    <constraint firstAttribute="height" constant="300" id="7Sn-hY-Ufc"/>
+                                    <constraint firstItem="RKs-XA-GQJ" firstAttribute="leading" secondItem="OZy-dV-2bb" secondAttribute="leading" constant="20" id="GGh-Mz-Kvn"/>
+                                    <constraint firstAttribute="trailing" secondItem="eaR-36-mSl" secondAttribute="trailing" constant="20" id="Gyi-Bx-2UW"/>
+                                    <constraint firstAttribute="trailing" secondItem="uFh-gT-wm5" secondAttribute="trailing" constant="20" id="NrP-4d-YdQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="uFh-gT-wm5" secondAttribute="bottom" constant="40" id="Tys-hQ-cdS"/>
+                                    <constraint firstItem="uFh-gT-wm5" firstAttribute="leading" secondItem="RKs-XA-GQJ" secondAttribute="trailing" constant="20" id="WoG-Ru-YbU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="Xgz-Ya-ZFh"/>
+                                    <constraint firstItem="RKs-XA-GQJ" firstAttribute="top" secondItem="OZy-dV-2bb" secondAttribute="top" constant="20" id="ZsY-o7-FTc"/>
+                                    <constraint firstAttribute="bottom" secondItem="RKs-XA-GQJ" secondAttribute="bottom" constant="20" id="vGD-xL-M16"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7I9-T8-fO0">
+                                <rect key="frame" x="0.0" y="300" width="375" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="xNT-9t-Tz5" customClass="WeatherCell" customModule="rainyshinycloudy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xNT-9t-Tz5" id="1Ys-bT-r69">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsJ-tx-RVp">
+                                                    <rect key="frame" x="16" y="18" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="FBK-7y-p1E"/>
+                                                        <constraint firstAttribute="height" constant="50" id="mQF-1G-Vlc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YKy-Ca-MFW">
+                                                    <rect key="frame" x="76" y="18.5" width="271" height="49"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eiD-Kf-WfV">
+                                                            <rect key="frame" x="0.0" y="0.0" width="219.5" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Saturday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYi-Ji-fOW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="219.5" height="30.5"/>
+                                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SUNNY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtQ-nM-BgO">
+                                                                    <rect key="frame" x="0.0" y="30.5" width="219.5" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rYE-bC-8Tr">
+                                                            <rect key="frame" x="219.5" y="0.0" width="51.5" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="91.4 °" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em7-8b-drZ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51.5" height="30.5"/>
+                                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="62.0 °" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPo-xz-rKS">
+                                                                    <rect key="frame" x="0.0" y="30.5" width="51.5" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YKy-Ca-MFW" secondAttribute="bottom" constant="10" id="MN4-2Q-dIL"/>
+                                                <constraint firstItem="YKy-Ca-MFW" firstAttribute="leading" secondItem="HsJ-tx-RVp" secondAttribute="trailing" constant="10" id="URx-8o-1jW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YKy-Ca-MFW" secondAttribute="trailing" constant="20" id="XKY-7G-BD3"/>
+                                                <constraint firstItem="YKy-Ca-MFW" firstAttribute="top" secondItem="1Ys-bT-r69" secondAttribute="topMargin" constant="10" id="Y2b-Qs-dT8"/>
+                                                <constraint firstItem="HsJ-tx-RVp" firstAttribute="top" secondItem="1Ys-bT-r69" secondAttribute="topMargin" constant="10" id="aLm-xP-c84"/>
+                                                <constraint firstItem="HsJ-tx-RVp" firstAttribute="leading" secondItem="1Ys-bT-r69" secondAttribute="leadingMargin" constant="8" id="alo-bn-cXe"/>
+                                                <constraint firstItem="YKy-Ca-MFW" firstAttribute="centerY" secondItem="HsJ-tx-RVp" secondAttribute="centerY" id="eUo-Fc-0GX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HsJ-tx-RVp" secondAttribute="bottom" constant="10" id="x4b-Ac-AGq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="YYi-Ji-fOW" id="SFS-oT-TZ2"/>
+                                            <outlet property="highTemp" destination="Em7-8b-drZ" id="xY4-H5-aw9"/>
+                                            <outlet property="lowTemp" destination="jPo-xz-rKS" id="IcJ-zF-z6N"/>
+                                            <outlet property="weatherIcon" destination="HsJ-tx-RVp" id="RZY-CE-X5J"/>
+                                            <outlet property="weatherType" destination="PtQ-nM-BgO" id="4dP-7K-mXx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7I9-T8-fO0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="0SQ-s5-4wg"/>
+                            <constraint firstAttribute="trailing" secondItem="OZy-dV-2bb" secondAttribute="trailing" id="7lq-Uc-uFy"/>
+                            <constraint firstItem="7I9-T8-fO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8D2-9p-LLw"/>
+                            <constraint firstItem="OZy-dV-2bb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ja5-fK-4k3"/>
+                            <constraint firstItem="7I9-T8-fO0" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="P8J-06-KpI"/>
+                            <constraint firstItem="7I9-T8-fO0" firstAttribute="top" secondItem="OZy-dV-2bb" secondAttribute="bottom" id="WEN-w0-axK"/>
+                            <constraint firstItem="OZy-dV-2bb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kPT-f3-VuH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qAe-zq-P5R"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentCityLabel" destination="ZZ7-tN-NmD" id="9CE-0M-H0x"/>
+                        <outlet property="currentDateLabel" destination="EfF-lq-HTX" id="uLS-yD-Xca"/>
+                        <outlet property="currentTempLabel" destination="sL2-8m-G7u" id="Jhf-FI-Agh"/>
+                        <outlet property="currentWeatherImageLabel" destination="eaR-36-mSl" id="Pkg-wG-zR2"/>
+                        <outlet property="currentWeatherLabel" destination="uFh-gT-wm5" id="Mhg-Wo-26q"/>
+                        <outlet property="tableView" destination="7I9-T8-fO0" id="CWo-jk-9wV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+</document>
